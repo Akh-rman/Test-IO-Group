@@ -1,0 +1,35 @@
+{
+  "name": "io-group",
+  "version": "1.0.0",
+  "description": "Form for IO-Group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akh-rman/Test-IO-Group.git"
+  },
+  "keywords": [
+    "form",
+    "io-group"
+  ],
+  "author": "Roman Akhmetshin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akh-rman/Test-IO-Group/issues"
+  },
+  "homepage": "https://github.com/Akh-rman/Test-IO-Group#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rev": "^8.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.28",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1"
+  }
+}
