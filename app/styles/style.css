@@ -11,7 +11,6 @@
 }
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 /***** End  Fonts *****/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,19 +26,17 @@ body {
     margin: auto;
     width: 1000px;
     height: 1900px;
-    background: url('/app/images/background.png');
+    background: url('../images/background.png');
 }
-
+/***** Header *****/
 .header {
-    position: relative;
-    top: 48px;
     display: flex;
-    margin-bottom: 40px;
 }
 
 .logo {
     position: relative;
     left: 112px;
+    margin: 48px 0 0 0;
     padding: 17px 0 6px 7px;
     width: 77px;
     height: 77px;
@@ -53,8 +50,7 @@ body {
 .text-rotate {
     position: relative;
     left: 617px;
-    margin: 0;
-    margin: 4px 0 0 2px;
+    margin: 48px 0 0 2px;
     padding: 10px;
     width: 245px;
     height: 96px;
@@ -73,6 +69,32 @@ body {
     margin: 0;
     font-size: 13px;
 }
+/***** End Header *****/
+/***** Main-content ****/
+.main-content {
+    margin: 29px 112px 0 112px;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-group_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.text__brown {
+    color : #2e1a15;
+}
+
+.text__big {
+    font-size: 24px;
+}
+
+.text__small {
+    font-size: 15px;
+}
 
 .file {
     color: #562c17;
@@ -81,8 +103,32 @@ body {
     font-family: 'Pobeda-Bold';
 }
 
-.main-content {
-    position: relative;
-    top: 29px;
-    margin: 0 auto 0 auto;
+.form-group_text {
+    color: #000000;
+    font-size: 21px;
 }
+
+.label {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22.44px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;  
+}
+
+.line {
+    flex: 1;
+    background: none;
+    font-family: 'Courier New';
+    color: #231f20;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    border: 0;
+    border-bottom: 2px solid #38211a;
+    margin-left: 15px;
+    padding-left: 15px
+}
+/***** End Main-content ****/
