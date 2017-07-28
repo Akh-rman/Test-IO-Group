@@ -82,6 +82,31 @@ body {
 .form-group_col {
     display: flex;
     flex-direction: column;
+    margin: 0 63px 0 0;
+}
+
+.text_label {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22.44px; 
+    font-weight: 700;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;  
+}
+
+.text_line {
+    flex: 1;
+    background: none;
+    font-family: 'Courier New';
+    color: #231f20;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    border: 0;
+    border-bottom: 2px solid #38211a;
+    margin-left: 15px;
+    padding-left: 15px;
 }
 
 .text__brown {
@@ -96,7 +121,7 @@ body {
     font-size: 15px;
 }
 
-.file {
+.text_file {
     color: #562c17;
     text-align: center;
     font-size: 100px;
@@ -106,29 +131,51 @@ body {
 .form-group_text {
     color: #000000;
     font-size: 21px;
-}
-
-.label {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 22.44px; /* Приближение из-за подстановки шрифтов */
-    font-weight: 700;
-    text-align: left;
-    display: flex;
-    align-items: flex-end;  
-}
-
-.line {
-    flex: 1;
     background: none;
-    font-family: 'Courier New';
-    color: #231f20;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-    border: 0;
-    border-bottom: 2px solid #38211a;
-    margin-left: 15px;
-    padding-left: 15px
+    font-family: 'PT Sans', sans-serif;
+}
+
+[type = "checkbox"], [type = "radio"] {
+    display: none;
+}
+
+.form-group_checkbox, .form-group_radio {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.form-group_checkbox {
+    background: url('../images/checkbox.png') no-repeat;
+    width: 19px;
+    height: 18px;
+}
+
+[type = "checkbox"]:checked + .form-group_checkbox::before {
+    content: "";
+    display: block;
+    background: url('../images/checkbox__check.png') no-repeat;
+    width: 21px;
+    height: 27px;
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+}
+
+.form-group_radio {
+    background: url('../images/radio.png') no-repeat;
+    width: 41px;
+    height: 45px;
+}
+
+[type = "radio"]:checked + .form-group_radio::before {
+    content: "";
+    display: block;
+    background: url('../images/radio__check.png') no-repeat;
+    width: 23px;
+    height: 27px;
+    position: absolute;
+    top: 12.5px;
+    left: 9px;    
 }
 /***** End Main-content ****/

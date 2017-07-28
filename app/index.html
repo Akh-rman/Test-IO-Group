@@ -24,27 +24,27 @@
     </div><!----- End .header ---->
     
     <div class = "main-content">
-        <h1 class = "file">ДЕЛО</h1>
+        <h1 class = "text_file">ДЕЛО</h1>
         <div class = "form">
             <div class = "form-group">
-                <label class = "label text__brown" for = "name">Полное ФИО</label>
-                <input class = "line" type = "text" id = "name" name = "name" value = "Ахметшин Роман Эдуардович" required>    
+                <label class = "text_label text__brown" for = "name">Полное ФИО</label>
+                <input class = "text_line" type = "text" id = "name" name = "name" value = "Ахметшин Роман Эдуардович" required>    
             </div>
             <div class = "form-group">
-                <label class = "label text__brown" for = "birthday">Год рождения</label>
-                <input class = "line" type = "text" id = "birthday" name = "birthday" value = "1994" required>
+                <label class = "text_label text__brown" for = "birthday">Год рождения</label>
+                <input class = "text_line" type = "text" id = "birthday" name = "birthday" value = "1994" required>
             </div>
             <div class = "form-group">
-                <label class = "label text__brown" for = "location">Место жительства</label>
-                <input class = "line" type = "text" id = "location" name = "location" value = "г. Томск" required>    
+                <label class = "text_label text__brown" for = "location">Место жительства</label>
+                <input class = "text_line" type = "text" id = "location" name = "location" value = "г.Томск" required>    
             </div>
             <div class = "form-group">
-                <label class = "label text__brown" for = "skype">Скайп</label>
-                <input class = "line" type = "text" id = "skype" name = "skype" value = "rmanavatar" required>
+                <label class = "text_label text__brown" for = "skype">Скайп</label>
+                <input class = "text_line" type = "text" id = "skype" name = "skype" value = "rmanavatar" required>
             </div>
             <div class = "form-group">
-                <label class = "label text__brown" for = "email">Почта</label>
-                <input class = "line" type = "text" id = emai name = "email" value = "akh-rman@rambler.ru">
+                <label class = "text_label text__brown" for = "email">Почта</label>
+                <input class = "text_line" type = "text" id = "email" name = "email" value = "akh-rman@rambler.ru" required>
             </div>
             <p class = "text__big text__brown">Расскажите о себе чекбоксами</p>
             <p class = "text__small">
@@ -53,42 +53,54 @@
             <div class = "form-group">
                 <div class = "form-group_col">
                     <label class = "form-group_text" for = "bem">
-                        <input class = "" type = "checkbox" id = "bem" name = "" value = "bem">Методология БЭМ
+                        <input type = "checkbox" id = "bem" name = "skills" value = "bem">
+                        <span class = "form-group_checkbox"></span> Методология БЭМ
                     </label>
                     <label class = "form-group_text" for = "jquery">
-                        <input class = "" type = "checkbox" id = "jquery" name = "" value = "jquery">jQuery
+                        <input type = "checkbox" id = "jquery" name = "skills" value = "jquery">
+                        <span class = "form-group_checkbox"></span> jQuery
                     </label>
                     <label class = "form-group_text" for = "haml">
-                        <input class = "" type = "checkbox" id = "haml" name = "" value = "haml">HAML
+                        <input type = "checkbox" id = "haml" name = "skills" value = "haml">
+                        <span class = "form-group_checkbox"></span> HAML
                     </label>
                     <label class = "form-group_text" for = "sass">
-                        <input class = "" type = "checkbox" id = "sass" name = "" value = "sass">SASS
+                        <input type = "checkbox" id = "sass" name = "skills" value = "sass">
+                        <span class = "form-group_checkbox"></span> SASS
                     </label>
                     <label class = "form-group_text" for = "less">
-                        <input class = "" type = "checkbox" id = "less" name = "" value = "less">LESS
+                        <input type = "checkbox" id = "less" name = "skills" value = "less">
+                        <span class = "form-group_checkbox"></span> LESS
                     </label>
                     <label class = "form-group_text" for = "jade">
-                        <input class = "" type = "checkbox" id = "jade" name = "" value = "jade">Jade
+                        <input type = "checkbox" id = "jade" name = "skills" value = "jade">
+                        <span class = "form-group_checkbox"></span> Jade
                     </label>
                     <label class = "form-group_text" for = "stylus">
-                        <input class = "" type = "checkbox" id = "stylus" name = "" value = "stylus">Stylus
+                        <input type = "checkbox" id = "stylus" name = "skills" value = "stylus">
+                        <span class = "form-group_checkbox"></span> Stylus
                     </label>    
                 </div><!--- End .form-group_col --->
                 <div class = "form-group_col">
                     <label class = "form-group_text" for = "angular">
-                        <input type = "checkbox" id = "angular" name = "" value = "angular">Знаю(изучаю) Angular
+                        <input type = "checkbox" id = "angular" name = "skills" value = "angular">
+                        <span class = "form-group_checkbox"></span> Знаю(изучаю) Angular
                     </label>
                     <label class = "form-group_text" for = "mail">
-                        <input type = "checkbox" id = "mail" name = "" value = "mailing">Верстка рассылок
+                        <input type = "checkbox" id = "mail" name = "skills" value = "mailing">
+                        <span class = "form-group_checkbox"></span> Верстка рассылок
                     </label>
                     <label class = "form-group_text" for = "adaptive">
-                        <input type = "checkbox" id = "adaptive" name = "" value = "adaptive layout">Адаптивная верстка 
+                        <input type = "checkbox" id = "adaptive" name = "skills" value = "adaptive layout">
+                        <span class = "form-group_checkbox"></span> Адаптивная верстка 
                     </label>
                     <label class = "form-group_text" for = "lazy">
-                        <input type = "checkbox" id = "lazy" name = "" value = "lazy">Я ленивый(-ая)
+                        <input type = "checkbox" id = "lazy" name = "skills" value = "lazy">
+                        <span class = "form-group_checkbox"></span> Я ленивый(-ая)
                     </label>
                     <label class = "form-group_text" for = "english">
-                        <input type = "checkbox" id = "english" name = "" value = "good english">У меня хороший английский
+                        <input type = "checkbox" id = "english" name = "skills" value = "good english">
+                        <span class = "form-group_checkbox"></span> У меня хороший английский
                     </label>
                 </div><!--- End .form-group_col --->    
             </div><!--- End .form-group --->
@@ -109,16 +121,20 @@
             </p>
             <div class = "form-group">
                 <label class = "form-group_text" for = "future_1">
-                    <input type = "radio" id = "future_1" name = "" value = "верстать">Верстать
+                    <input type = "radio" id = "future_1" name = "future" value = "верстать">
+                    <span class = "form-group_radio"></span>Верстать
                 </label>
                 <label class = "form-group_text" for = "future_2">
-                    <input type = "radio" id = "future_2" name = "" value = "улучшить навыки в JS">Прокачаться в JS
+                    <input type = "radio" id = "future_2" name = "future" value = "улучшить навыки в JS" required>
+                    <span class = "form-group_radio"></span>Прокачаться в JS
                 </label>
                 <label class = "form-group_text" for = "future_3">
-                    <input type = "radio" id = "future_3" name = "" value = "менеджерство">Менеджерство
+                    <input type = "radio" id = "future_3" name = "future" value = "менеджерство">
+                    <span class="form-group_radio"></span>Менеджерство
                 </label>
                 <label class = "form-group_text" for = "future_4">
-                    <input type = "radio" id = "future_4" name = "" value = "другое">Другое
+                    <input type = "radio" id = "future_4" name = "future" value = "другое">
+                    <span class="form-group_radio"></span>Другое
                 </label>
             </div>   
         </div><!--- End .form --->
