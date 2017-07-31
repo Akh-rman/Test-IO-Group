@@ -9,10 +9,6 @@
     <!-- build:css styles/style.css -->
     <link rel = "stylesheet" href = "styles/style.css">
     <!-- endbuild -->
-    
-    <!-- build:js js/script.js -->
-    <script src = "js/script.js"></script>
-    <!-- endbuild -->
 </head>
 <body>
     <div class = "header">
@@ -123,7 +119,8 @@
                     Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
                 </p>
                 <div class = "form-group">
-                    <textarea name = "" id = "about" cols = "30" rows = "10"></textarea>
+                    <div class = "textarea-hidden"></div>   
+                    <textarea class = "textarea-notes" name = "about" id = "about" cols = "30" rows = "10" required></textarea>
                 </div> 
             </div><!--- End .form-block --->
             
@@ -134,12 +131,12 @@
                 </p>    
                 <div class = "form-group">
                     <label class = "form-group_text" for = "future_1">
-                        <input type = "radio" id = "future_1" name = "future" value = "верстать">
+                        <input type = "radio" id = "future_1" name = "future" value = "верстать" required>
                         <span class = "form-group_radio"></span>
                         <span class = "form-group_text__text-radio">Верстать</span>
                     </label>
                     <label class = "form-group_text" for = "future_2">
-                        <input type = "radio" id = "future_2" name = "future" value = "улучшить навыки в JS">
+                        <input type = "radio" id = "future_2" name = "future" value = "улучшить навыки в JS" checked>
                         <span class = "form-group_radio"></span>
                         <span class="form-group_text__text-radio">Прокачаться в JS</span>
                     </label>
@@ -156,6 +153,10 @@
                 </div><!--- End .form-group --->    
             </div><!--- End .form-block --->   
         </div><!--- End .form --->
-    </div><!--- End .main-content --->  
+    </div><!--- End .main-content --->
+    
+    <!-- build:js js/script.js -->
+    <script src = "js/script.js"></script>
+    <!-- endbuild -->  
 </body>
-</html>
+</html>d

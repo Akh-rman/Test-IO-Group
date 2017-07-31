@@ -25,7 +25,7 @@ html {
 body {
     margin: auto;
     width: 1000px;
-    height: 1900px;
+    height: 100%;
     background: url('../images/background.png');
 }
 /***** Header *****/
@@ -43,8 +43,7 @@ body {
     background-color: #e13227;
     color: #FFF;
     text-decoration: none;
-    font-size: 23px;
-    font-family: 'PT Sans', sans-serif;
+    font: 23px 'PT Sans', sans-serif;
 }
 
 .header_text-rotate {
@@ -99,14 +98,11 @@ body {
 .text-file {
     color: #562c17;
     text-align: center;
-    font-size: 120px;
-    font-family: 'Pobeda-Bold';
+    font: 120px 'Pobeda-Bold'; 
 }
 
 .text-label {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 22.44px; 
-    font-weight: 700;
+    font: 700 22.44px 'PT Sans', sans-serif;
     text-align: left;
     display: flex;
     align-items: flex-end;
@@ -115,10 +111,8 @@ body {
 .text-line {
     flex: 1;
     background: none;
-    font-family: 'Courier New';
+    font: 400 30px 'Courier New';
     color: #231f20;
-    font-size: 30px;
-    font-weight: 400;
     line-height: 36px;
     text-align: left;
     border: 0;
@@ -150,10 +144,8 @@ body {
 
 .form-group_text {
     color: #000000;
-    font-size: 20px;
-    font-weight: 700;
+    font: 700 20px 'PT Sans', sans-serif;
     background: none;
-    font-family: 'PT Sans', sans-serif;
     margin-bottom: 7px;
     display: flex;
     align-items: center;
@@ -207,4 +199,33 @@ body {
     top: 4px;
     left: 4px;
 }
+
+.text-area-notes {
+    background:
+        linear-gradient(rgba(255,255,255, 0) 1.9em, rgba(46, 20, 17, 1) 2em) 0 0;
+    background-size: 2em 2em;
+    line-height: 2;
+    resize: none;
+    width: 100%;
+    font: 'Courier New';
+    font-weight: 400;
+    border: none;
+    padding-top: 10px;
+    height: 200px;
+    font-size: 30px;
+    color: #231f20;
+}
+
+.textarea-hidden {
+    display: none;
+    white-space: pre-wrap;
+    width: 500px;
+    min-height: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
 /***** End Main-content ****/
