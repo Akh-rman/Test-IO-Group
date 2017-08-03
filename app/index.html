@@ -53,11 +53,11 @@
                 <div class = "form-group">
                     <div class = "form-group_col">
                         <label class = "form-group_text" for = "bem">
-                            <input type = "checkbox" id = "bem" name = "skills" value = "bem">
+                            <input type = "checkbox" id = "bem" name = "skills" value = "bem"  checked>
                             <span class = "form-group_checkbox"></span>Методология БЭМ
                         </label>
                         <label class = "form-group_text" for = "jquery">
-                            <input type = "checkbox" id = "jquery" name = "skills" value = "jquery">
+                            <input type = "checkbox" id = "jquery" name = "skills" value = "jquery" checked>
                             <span class = "form-group_checkbox"></span>jQuery
                         </label>
                         <label class = "form-group_text" for = "haml">
@@ -83,7 +83,7 @@
                     </div><!--- End .form-group_col --->
                     <div class = "form-group_col">
                         <label class = "form-group_text" for = "angular">
-                            <input type = "checkbox" id = "angular" name = "skills" value = "angular">
+                            <input type = "checkbox" id = "angular" name = "skills" value = "angular" checked>
                             <span class = "form-group_checkbox"></span>Знаю(изучаю) Angular
                         </label>
                         <label class="form-group_text" for="mail">
@@ -91,7 +91,7 @@
                             <span class = "form-group_checkbox"></span>Верстка рассылок
                         </label>
                         <label class="form-group_text" for="adaptive">
-                            <input type = "checkbox" id = "adaptive" name = "skills" value = "adaptive layout">
+                            <input type = "checkbox" id = "adaptive" name = "skills" value = "adaptive layout" checked>
                             <span class = "form-group_checkbox"></span>Адаптивная верстка 
                         </label>
                         <label class="form-group_text" for="lazy">
@@ -109,7 +109,12 @@
             <div class = "form-block">
                 <p class = "text__big text__brown">Уровень владения JavaScript</p>    
                 <div class = "form-group">
-                        
+                    <input class = "js-skill_thumb" type = "range" name = "js skill" min = "1" max = "10" value = "7" required>
+                    <span class="js-skill_track"></span>
+                    <span class = "js-skill_text js-skill_text__1">Не владею</span>
+                    <span class = "js-skill_text js-skill_text__2">Использую готовые решения</span>
+                    <span class = "js-skill_text js-skill_text__3">Использую готовые решения и умею их переделывать</span>
+                    <span class = "js-skill_text js-skill_text__4">Пишу сложный JS с нуля</span>  
                 </div>    
             </div><!--- End .form-block --->
             

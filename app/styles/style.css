@@ -20,12 +20,13 @@
 html {
     width: 100%;
     background-color: #797979;
+    height: 100%;
 }
 
 body {
-    margin: auto;
+    margin: 0 auto 0 auto;
     width: 1000px;
-    height: 100%;
+    min-height: 1800px;
     background: url('../images/background.png');
 }
 /***** Header *****/
@@ -87,6 +88,7 @@ body {
 .form-group {
     display: flex;
     margin-bottom: 25px;
+    position: relative;
 }
 
 .form-group_col {
@@ -227,4 +229,91 @@ body {
     word-wrap: break-word;
 }
 
+.js-skill_thumb {
+    -webkit-appearance: none;    
+    width: 100%;
+    height: 10px;
+    display: block;
+    z-index: 1;
+    margin: 15px 0 50px 0;
+    background: none;
+}
+
+.js-skill_thumb:focus {
+    outline: none;
+}
+
+.js-skill_track {
+    display: block;
+    height: 55px;
+    width: 100%;
+    background: url("../images/trace.png");
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+/***** Специальный стиль  для ползунка в WebKit / Blink *****/
+.js-skill_thumb::-webkit-slider-thumb  {
+    -webkit-appearance: none;
+	box-sizing: content-box;
+    background: url("../images/thumb.png");
+    height: 14px;
+    width: 17px;
+    border: none;
+}
+/***** Специальный стиль  для полосы диапозона в WebKit / Blink *****/
+.js-skill_thumb::-webkit-slider-runnable-track {
+    -webkit-appearance: none;   
+    background: none;
+}
+/***** Специальный стили для ползунка в Firefox *****/
+.js-skill_thumb::-moz-range-thumb {
+    background: url("../images/thumb.png");
+    box-sizing: content-box;
+    height: 14px;
+    width: 17px;
+    border: none;
+}
+/***** Специальный стили для полосы диапозона в Firefox *****/
+.js-skill_thumb::-moz-range-track {
+    background: none;
+}
+/***** Специальный стиль для ползунка в IE *****/
+.js-skill_th::-ms-thumb {
+    background: url("../images/thumb.png"); 
+    height: 14px;
+    width: 17px;
+    border: none;
+}
+/***** Специальный стиль для полосы диапозона в IE *****/
+.js-skill::-ms-track {
+    background: none;
+}
+
+.js-skill_text {
+    display: block;
+    font:700 13px 'PT Sans';
+    color: #2e1a15;
+    text-align: left;
+    line-height: 19px;
+    position: absolute;
+    top: 60px;
+    width: 180px;
+}
+
+.js-skill_text__1 {
+    left: 5px;
+}
+
+.js-skill_text__2 {
+    left: 150px;
+}
+
+.js-skill_text__3 {
+    left: 375px;
+}
+
+.js-skill_text__4 {
+    left: 635px;
+}
 /***** End Main-content ****/
