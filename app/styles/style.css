@@ -288,6 +288,8 @@ body {
 /***** Специальные стили для полосы диапозона в IE *****/
 .js-skill_thumb::-ms-track {
     background: none;
+    border: none;
+    color: transparent;
 }
 
 .js-skill_thumb::-ms-fill-lower, .js-skill_thumb::-ms-tooltip {
