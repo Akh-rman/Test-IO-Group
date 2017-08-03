@@ -6,32 +6,158 @@
     <meta name = "viewport" content = "width = device-width, initial-scale = 1">
     <title>Анкета IO-Group</title>
     
-    <link rel="stylesheet" href="styles/style-06a6936e53.css"/>
-    
-    <script src="js/script-d41d8cd98f.js"></script>
+    <link rel="stylesheet" href="styles/style-592d814d90.css"/>
 </head>
 <body>
     <div class = "header">
-        <a class = "logo" href = "https://tomsk.hh.ru/employer/2921754">iO Group</a>
-        <div class = "text-rotate">
-            <p class = "text-rotate__big">СЕКРЕТНО</p>
-            <p class = "text-rotate__small">ЗАПОЛНЕНО СОБСТВЕННОРУЧНО</p>
+        <a class = "header_logo" href = "https://tomsk.hh.ru/employer/2921754">iO Group</a>
+        <div class = "header_text-rotate">
+            <p class = "header_text-rotate__big">СЕКРЕТНО</p>
+            <p class = "header_text-rotate__small">ЗАПОЛНЕНО СОБСТВЕННОРУЧНО</p>
         </div>
     </div><!----- End .header ---->
     
     <div class = "main-content">
-        <h1 class = "file">ДЕЛО</h1>
+        <h1 class = "text-file">ДЕЛО</h1>
         <div class = "form">
-            <label for = "name">Полное ФИО</label>
-            <input type = "text" id = "name" name = "name" required><br>
-            <label for = "birthday">Год рождения</label>
-            <input type = "text" id = "birthday" name = "birthday" required><br>
-            <label for = "location">Место жительства</label>
-            <input type = "text" id = "location" name = "location" required>
-            <label for = "skype">Скайп</label>
-            <input type = "text" id = "skype" name = "skype" required>
-            <label for = "email">Почта</label>    
-        </div>
-    </div><!--- End .main-content --->  
+            <div class = "form-block">
+                <div class = "form-group">
+                    <label class = "text-label text__brown" for = "name">Полное ФИО</label>
+                    <input class = "text-line" type = "text" id = "name" name = "name" value = "Ахметшин Роман Эдуардович" required>
+                </div>
+                <div class = "form-group">
+                    <label class = "text-label text__brown" for = "birthday">Год рождения</label>
+                    <input class = "text-line" type = "text" id = "birthday" name = "birthday" value = "1994" required>
+                </div>
+                <div class = "form-group">
+                    <label class = "text-label text__brown" for = "location">Место жительства</label>
+                    <input class = "text-line" type = "text" id = "location" name = "location" value = "г.Томск" required>
+                </div>
+                <div class = "form-group">
+                    <label class = "text-label text__brown" for = "skype">Скайп</label>
+                    <input class = "text-line" type = "text" id = "skype" name = "skype" value = "rmanavatar" required>
+                </div>
+                <div class = "form-group">
+                    <label class = "text-label text__brown" for = "email">Почта</label>
+                    <input class = "text-line" type = "text" id = "email" name = "email" value = "akh-rman@rambler.ru" required>
+                </div>
+            </div><!--- End .form-block --->
+            
+            <div class = "form-block">
+                <p class = "text__big text__brown">Расскажите о себе чекбоксами</p>
+                <p class = "text__small">
+                    Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+                </p>
+                <div class = "form-group">
+                    <div class = "form-group_col">
+                        <label class = "form-group_text" for = "bem">
+                            <input type = "checkbox" id = "bem" name = "skills" value = "bem"  checked>
+                            <span class = "form-group_checkbox"></span>Методология БЭМ
+                        </label>
+                        <label class = "form-group_text" for = "jquery">
+                            <input type = "checkbox" id = "jquery" name = "skills" value = "jquery" checked>
+                            <span class = "form-group_checkbox"></span>jQuery
+                        </label>
+                        <label class = "form-group_text" for = "haml">
+                            <input type = "checkbox" id = "haml" name = "skills" value = "haml">
+                            <span class = "form-group_checkbox"></span>HAML
+                        </label>
+                        <label class = "form-group_text" for = "sass">
+                            <input type = "checkbox" id = "sass" name = "skills" value = "sass">
+                            <span class = "form-group_checkbox"></span>SASS
+                        </label>
+                        <label class = "form-group_text" for = "less">
+                            <input type = "checkbox" id = "less" name = "skills" value = "less">
+                            <span class = "form-group_checkbox"></span>LESS
+                        </label>
+                        <label class = "form-group_text" for = "jade">
+                            <input type = "checkbox" id = "jade" name = "skills" value = "jade">
+                            <span class = "form-group_checkbox"></span>Jade
+                        </label>
+                        <label class = "form-group_text" for = "stylus">
+                            <input type = "checkbox" id = "stylus" name = "skills" value = "stylus">
+                            <span class = "form-group_checkbox"></span>Stylus
+                        </label>
+                    </div><!--- End .form-group_col --->
+                    <div class = "form-group_col">
+                        <label class = "form-group_text" for = "angular">
+                            <input type = "checkbox" id = "angular" name = "skills" value = "angular" checked>
+                            <span class = "form-group_checkbox"></span>Знаю(изучаю) Angular
+                        </label>
+                        <label class="form-group_text" for="mail">
+                            <input type = "checkbox" id = "mail" name = "skills" value = "mailing">
+                            <span class = "form-group_checkbox"></span>Верстка рассылок
+                        </label>
+                        <label class="form-group_text" for="adaptive">
+                            <input type = "checkbox" id = "adaptive" name = "skills" value = "adaptive layout" checked>
+                            <span class = "form-group_checkbox"></span>Адаптивная верстка 
+                        </label>
+                        <label class="form-group_text" for="lazy">
+                            <input type = "checkbox" id = "lazy" name = "skills" value = "lazy">
+                            <span class = "form-group_checkbox"></span>Я ленивый(-ая)
+                        </label>
+                        <label class="form-group_text" for="english">
+                            <input type = "checkbox" id = "english" name = "skills" value = "good english">
+                            <span class = "form-group_checkbox"></span>У меня хороший английский
+                        </label>
+                    </div><!--- End .form-group_col --->
+                </div><!--- End .form-group --->   
+            </div><!--- Ens .form-block --->
+            
+            <div class = "form-block">
+                <p class = "text__big text__brown">Уровень владения JavaScript</p>    
+                <div class = "form-group">
+                    <input class = "js-skill_thumb" type = "range" name = "js skill" min = "1" max = "10" value = "7" step="any" required>
+                    <span class = "js-skill_track"></span>
+                    <span class = "js-skill_text js-skill_text__1">Не владею</span>
+                    <span class = "js-skill_text js-skill_text__2">Использую готовые решения</span>
+                    <span class = "js-skill_text js-skill_text__3">Использую готовые решения и умею их переделывать</span>
+                    <span class = "js-skill_text js-skill_text__4">Пишу сложный JS с нуля</span>  
+                </div>    
+            </div><!--- End .form-block --->
+            
+            <div class = "form-block">
+                <p class = "text__big text__brown">Расскажите о себе словами</p>
+                <p class = "text__small">
+                    Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+                </p>
+                <div class = "form-group">
+                    <div class = "textarea-hidden"></div>   
+                    <textarea id = "textarea-notes" class = "textarea-notes" name = "about" id = "about" cols = "30" rows = "10" required></textarea>
+                </div> 
+            </div><!--- End .form-block --->
+            
+            <div class = "form-block">
+                <p class = "text__big text__brown">Какие у вас планы на будущее?</p>
+                <p class = "text__small">
+                    Этот ответ ни на что не повлиляет. Не беда, если в будущем ваши планы поменяются.
+                </p>    
+                <div class = "form-group">
+                    <label class = "form-group_text" for = "future_1">
+                        <input type = "radio" id = "future_1" name = "future" value = "верстать" required>
+                        <span class = "form-group_radio"></span>
+                        <span class = "form-group_text__text-radio">Верстать</span>
+                    </label>
+                    <label class = "form-group_text" for = "future_2">
+                        <input type = "radio" id = "future_2" name = "future" value = "улучшить навыки в JS" checked>
+                        <span class = "form-group_radio"></span>
+                        <span class = "form-group_text__text-radio">Прокачаться в JS</span>
+                    </label>
+                    <label class = "form-group_text" for = "future_3">
+                        <input type = "radio" id = "future_3" name = "future" value = "менеджерство">
+                        <span class = "form-group_radio"></span>
+                        <span class = "form-group_text__text-radio">Менеджерство</span>
+                    </label>
+                    <label class = "form-group_text" for = "future_4">
+                        <input type = "radio" id = "future_4" name = "future" value = "другое">
+                        <span class = "form-group_radio"></span>
+                        <span class = "form-group_text__text-radio">Другое</span>
+                    </label>
+                </div><!--- End .form-group --->    
+            </div><!--- End .form-block --->   
+        </div><!--- End .form --->
+    </div><!--- End .main-content --->
+    
+    <script src="js/script-3c227570e7.js"></script>  
 </body>
 </html>
