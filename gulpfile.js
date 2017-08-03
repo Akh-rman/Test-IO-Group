@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     usemin = require('gulp-usemin'),
     del = require('del'),
     rev = require('gulp-rev'),
+    imagemin = require('gulp-imagemin'),
     watch = require('gulp-watch');
 
 gulp.task('jshint', function() {
@@ -18,6 +19,12 @@ gulp.task('clean', function() {
     return del(['dist/']);
 });
 
+gulp.task('imagemin', function() {
+    return del(['dist/images']), gulp.src('app/images/*')
+    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true, verbose: true }))
+    .pipe(gulp.dest('dist/images'));
+});
+
 gulp.task('usemin', ['jshint'], function() {
     return gulp.src('./app/index.html')
     .pipe(usemin({
@@ -27,9 +34,16 @@ gulp.task('usemin', ['jshint'], function() {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('copyfonts', ['clean'], function() {
+    gulp.src('app/fonts/*.{ttf,woff,eof,svg}*')
+    .pipe(gulp.dest('dist/fonts'));
+});
+
 gulp.task('watch', function() {
     return watch('{app/styles/*.css, app/script/*.js, app/*.html}', ['usemin']);
 });
 
 // Default task 
-gulp.task('default', ['clean', 'watch', 'usemin']);
+gulp.task('default', ['clean'], function() {
+    gulp.start('usemin', 'imagemin','copyfonts');
+});
