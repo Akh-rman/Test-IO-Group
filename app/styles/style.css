@@ -279,14 +279,14 @@ body {
     background: none;
 }
 /***** Специальный стиль для ползунка в IE *****/
-.js-skill_th::-ms-thumb {
+.js-skill_thumb::-ms-thumb {
     background: url("../images/thumb.png"); 
     height: 14px;
     width: 17px;
     border: none;
 }
 /***** Специальный стиль для полосы диапозона в IE *****/
-.js-skill::-ms-track {
+.js-skill_thumb::-ms-track {
     background: none;
 }
 
