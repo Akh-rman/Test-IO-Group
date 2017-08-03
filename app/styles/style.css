@@ -202,7 +202,7 @@ body {
     left: 4px;
 }
 
-#textarea-notes {
+.textarea-notes {
     background:
         linear-gradient(rgba(255,255,255, 0) 1.9em, rgba(46, 20, 17, 1) 2em) 0 0;
     background-size: 2em 2em;
@@ -219,14 +219,23 @@ body {
     overflow: hidden;
 }
 
+.textarea-notes:focus {
+    outline: none;
+}
+
 .textarea-hidden {
-    display: none;
     white-space: pre-wrap;
     width: 100%;
     min-height: 200px;
     font-size: 30px;
-    padding: 5px;
+    padding-top: 10px;
     word-wrap: break-word;
+    font-family: 'Courier New';
+    line-height: 2;
+    font-weight: 400;
+    position: absolute;
+    top: 10px;
+    z-index: -1;
 }
 
 .js-skill_thumb {
