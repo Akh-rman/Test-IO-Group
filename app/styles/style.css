@@ -24,10 +24,10 @@ html {
 }
 
 body {
-    margin: 0 auto 0 auto;
+    margin: 0 auto -10px auto;
     width: 1000px;
     min-height: 1800px;
-    background: url('../images/background.png');
+    background: url('../images/background.png');    
 }
 /***** Header *****/
 .header {
@@ -82,12 +82,12 @@ body {
 }
 
 .form-block {
-    margin-bottom: 60px;    
+    padding-bottom: 60px;    
 }
 
 .form-group {
     display: flex;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
     position: relative;
 }
 
@@ -121,6 +121,12 @@ body {
     border-bottom: 2px solid #38211a;
     margin-left: 15px;
     padding-left: 15px;
+    outline: none;
+}
+
+.text-line__reset {
+    flex: none;
+    width: 215px;
 }
 
 .text__brown {
