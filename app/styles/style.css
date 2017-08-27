@@ -54,12 +54,14 @@ body {
     margin: 48px 0 0 2px;
     width: 245px;
     height: 96px;
-    border: 2px solid #132378;
+    border: 2.5px solid #4f5c8e;
     text-align: center;
     transform: rotate(-3deg);
-    color: #132378;
+    color: #4f5c8e;
     flex-direction: column;
     justify-content: center;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .header_text-rotate__big {
@@ -172,8 +174,9 @@ body {
 }
 
 .form-group_checkbox {
-    background: url('../images/checkbox.png') no-repeat;
-    width: 19px;
+    border: 1.5px solid #5e472b;
+    border-radius: 2.5px;
+    width: 18px;
     height: 18px;
     margin-right: 5px;
 }
@@ -185,8 +188,8 @@ body {
     width: 21px;
     height: 27px;
     position: absolute;
-    bottom: 2px;
-    left: 2px;
+    bottom: 0px;
+    left: 0px;
 }
 
 .form-group_radio {
